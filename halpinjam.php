@@ -26,31 +26,31 @@
 			</p>
 		</div>
 		<div class="list">
-			<form action="keranjang.php" method="POST"></form>
+			<form action="keranjang.php" method="POST">
 			<table style="font-size : 16x">
-			<tr>
-					<td>No</td>
-					<td>Judul Buku</td>
-					<td>Penerbit</td>
-					<td>Keterangan</td>
+				<tr>
+					<th>No</th>
+					<th>Judul Buku</th>
+					<th>Penerbit</th>
+					<th>Keterangan</th>
 				</tr>
 				<tr>
 					<td>1</td>
 					<td>Buku 1</td>
 					<td>Penerbit 1</td>
-					<td><input type="checkbox" name="borrow" value="Pinjam" onclick="check()"></td>
+					<td><input type="checkbox" name="borrow" value="Buku 1" onclick="check()"></td>
 				</tr>
 				<tr>
 					<td>2</td>
 					<td>Buku 2</td>
 					<td>Penerbit 2</td>
-					<td><input type="checkbox" name="borrow" value="Pinjam"onclick="check()"></td>
+					<td><input type="checkbox" name="borrow" value="Buku 2"onclick="check()"></td>
 				</tr>
 				<tr>
 					<td>3</td>
 					<td>Buku 3</td>
 					<td>Penerbit 3</td>
-					<td><input type="checkbox" name="borrow" value="Pinjam"onclick="check()"></td>
+					<td><input type="checkbox" name="borrow" value="Buku 3"onclick="check()"></td>
 				</tr>
 				<tr>
 					<td>
@@ -61,6 +61,7 @@
 					</td>
 				</tr>
 			</table>
+			</form>
 		</div>
 	</div>
 </body>

@@ -13,30 +13,36 @@
 			<hr>
 			<h2 class="title">Konfirmasi</h2>
 		</div>
-		<div class="content">
-			<ul>
-				
-			</ul>
-		</div>
 		<div class="list">
+			<?php
+				$startdate = date("y/m/d");
+				$borrow = $_POST['borrow'];
+				isset($_POST['borrow']);
+			?>
+			<p>
+				Tanggal Peminjaman : <?php echo $startdate?>
+			</p>
 			<table>
 				<tr>
-					<td>No</td>
-					<td>Judul Buku</td>
-					<td>Penerbit</td>
-					<td>Keterangan</td>
-				</tr>
-				<tr>
-					<?php
-					$borrow = $_POST['borrow'];
-
-						if (isset($_POST['borrow']) && $_POST['borrow'] == 'Pinjam'){
-							echo $borrow;
-						}
-					?>
-				
+					<th>No</th>
+					<th>Judul Buku</th>
+					<th>Penerbit</th>
+					<th>Keterangan</th>
 				</tr>
 			</table>
+			<?php
+
+				if ($_POST['borrow'] = 2) {
+					$enddate = date_create('P2W');
+					echo $borrow;
+					echo $enddate;
+				} else if ($_POST['borrow'] > 2){
+					$enddate = date_create('P4W');
+					echo $borrow;
+				} else {
+					$enddate = date_create('P1W');
+				}
+				?>
 		</div>
 	</div>
 </body>
